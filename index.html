@@ -1,36 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Weather UI</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
   
-  <div class="header">
-    <input type="text" placeholder="Enter location" />
-    <button>Search</button>
+  <div class="Header">
+    <input type="text" id="cityInput" placeholder="Enter city">
+    <button onclick="getWeather()">Search</button>
   </div>
+
+  
   <div class="container">
     <div class="weather-card">
-      
+
       <div class="temp">
-        <h2>12.5°C</h2>
+        <h2 id="temp">--°C</h2>
       </div>
 
       <div class="city">
-        <h2>Delhi</h2>
-        <p>15 February 2026</p>
+        <h2 id="city">City</h2>
+        <p id="date">Date</p>
       </div>
 
       <div class="status">
-        <div class="icon">☁️</div>
-        <p>Sunny</p>
+        <div class="icon" id="icon">☁️</div>
+        <p id="condition">Condition</p>
       </div>
 
     </div>
   </div>
 
+  <script src="script.js"></script>
 </body>
 </html>
+
